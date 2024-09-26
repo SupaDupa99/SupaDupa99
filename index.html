@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>99 Home</title>
+
+<!-- This is the basic style, giving the default background color, font size, and font color of the web page -->
+<style>
+/* Body */
+body{@charset "utf-8";   background-color:LightGray;  font-size:100%;  color:black;}
+
+/* Fonts */
+.fs{font-size:small;}                                              /* small font size */
+.fR{color:red;}  .fRB{color:red; font-weight:bold;}        /* font color red, 100% and bold */
+.fB{color:MidnightBlue;}  .fBB{colorMidnightBlue; font-weight:bold;}        /* font color blue (greyish), 100% and bold, 100% blus is used for links */
+.fM{color:Maroon;}  .fMB{color:Maroon; font-weight:bold;}        /* font color maroon, 100% and bold */
+.fG{color:MediumSeaGreen;}  .fGB{color:#MediumSeaGreen; font-weight:bold;}        /* font color green (dark), 100% and bold  */
+
+/* Tables */
+table.nb {  border-collapse: collapse;   margin:5px;  }                                         /* table with 100% fonts and border  */
+
+table.st{font-size:small;}   table.stb{font-size:small;border-collapse: collapse; margin:5px;}  /* table with small fonts +/- border  */
+table.stb td,table.stb th,table.nb td,table.nb th { border: 2px solid black; padding: 2px; }    /* table elements with small fonts + border  */
+
+/*  Containers */
+.cC{background-color:OldLace; color:Purple;  padding:5px; border:1px solid black; font-size:110%;}   /* container  for contents */ 
+.cL{color:OldLace;  background-color:Purple; font-size:110%;}                                        /* containers for labels */
+
+</style>
+
+
+<script>
+<!--
+//            Javascript program controlling collapsible panels
+
+cStart = "a";
+cFinish = "z";
+nStart = "0";
+nFinish = 75;
+function expandDiv(curobj,which){trig=document.getElementById(which).style.display;if(trig=="block"){trig="none";}else if(trig=="" || trig=="none"){trig="block";}  document.getElementById(which).style.display=trig;}
+function DivExists(id){if(!!document.getElementById(id)) return 1;  return 0;}
+function ChangeShowEach(id, displayType){if(DivExists(id)==1) document.getElementById(id).style.display = displayType;}
+function ChangeShowAll(displayType){for(i=cStart.charCodeAt(0); i<= cFinish.charCodeAt(0);i++){c = String.fromCharCode(i);for(j=nStart; j<=nFinish;j++){id = `${c}${j}`;ChangeShowEach(id, displayType)}}}
+function DoShow(){ChangeShowAll("block");}
+function DoHide(){ChangeShowAll("none");}
+function ChangeShow(onAr){DoHide(); for(i=0;i<onAr.length;i++) ChangeShowEach(onAr[i], "block");}
+-->
+</script>
+
+
+</head>
+<body>
+
+<h2 align="center">SupaDupa99 Home Page</h2>
+
+<div align="center"><table><tr><td align="left" class="cC">
+<img src="https://SupaDupa99.github.io/SupaDupa99Logo.png" width="200px" style="float:right">
+SupaDupa99 is a website developed in collaboration<br />between experienced and novice web site builders
+
+<p>The contents will therefore change as development proceeds
+
+<p><b>The current Repositories are</b>
+<ul>
+<li><b>io: </b> The main server
+    <ul>
+    <li>This home page
+    <li>The avatar, also used as the site icon
+    <li><a href="https://SupaDupa99.github.io/SupaDupaNinja.html">Show SupaDupaNinja</a> 
+    <li><a href="https://SupaDupa99.github.io/ControlPanel99_encrypted.html">Show Control Panel</a> <span class="fs">(All links goes to new tab)</span>
+    </ul> 
+<li><b>S2: </b>The second server
+    <ul>
+    <li>The Template Files
+        <ul>
+        <li><a href="https://SupaDupa99.github.io/S2/TSimple.html"> a blank html template for teaching</a>
+        <li><a href="https://SupaDupa99.github.io/S2/TPage_99.html">a constructed html template ready to use</a> 
+        <li><a href="https://SupaDupa99.github.io/S2/TSearch_99.html">a complicated html template for abook form of html</a> 
+        </ul>
+    </ul>
+</ul> 
+
+<b>Help Files from SupaDupa1802</b> (for later use)
+<ul>
+<li><a href="https://SupaDupa1802.github.io/S2/Help/RepositoryAndFiles1802.html">Management of Repositories and Files</a>
+<li><a href="https://SupaDupa1802.github.io/S2/Help/MakeStyle.html">App to help write styles and classes</a>
+<li><a href="https://SupaDupa1802.github.io/S2/Help/EditingTools.html">Editing Tools</a>
+</ul>
+</div><br />
+
+</td></tr></table></div>
+</body>
+</html>
